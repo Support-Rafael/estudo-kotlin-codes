@@ -1,12 +1,30 @@
 fun main() {
-    val nome = "RafaelBruno"
-    val tamanhoDoNome = nome.length //Acessando a propriedado do objeto String para mostrar quantos caracteres tem armazenado dentro da String
+    //Formatação de Texto
 
-    val nomeMaiusculo = "Rafael Bruno".uppercase() //Função que deixa todos os caracteres maiusculos
-    val nomeMinusculo = "Rafael Bruno".lowercase() //Função que deixa todos os caracteres minusculos
+    //1° Maneira de Formatar
+    val message = "Olá Rafael.\n Seu produto chegou!"
+    println(message)
 
-    println(tamanhoDoNome)
-    println(nomeMaiusculo)
-    println(nomeMinusculo)
+    println("==============================")
+
+    //2° Maneira de Formatar
+    val mensagem = """
+        Olá Rafael
+         Seu produto chegou!
+    """.trimIndent()
+    //.trimIndent() = Método usado pra eliminar todos os espaços em branco do Texto
+    //.replaceIndent(";") = Método usado para substituir todos os espaços pelo caracter selecionado, no caso do exemplo anterior ";"
+    println(mensagem)
+
+    println("==============================")
+
+    //3° Maneira de Formatar
+    val nome = "Rafael"
+    val idade = 22
+    val cidade = "Cuiaba"
+    //Método padrão
+    println("Seu nome é: " + nome + ". Sua idade é: " + idade + ". Sua cidade natal é: " + cidade)
+    //Método aprimorado
+    println("Seu nome é: $nome. Sua idade é: ${cidade+10}. Sua cidade natal é: $cidade") //É possível fazer expressões dentro dos colchetes{}
 
 }
