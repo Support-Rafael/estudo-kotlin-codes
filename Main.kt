@@ -1,12 +1,12 @@
 fun main() {
-    val nome = "RafaelBruno"
-    val tamanhoDoNome = nome.length //Acessando a propriedado do objeto String para mostrar quantos caracteres tem armazenado dentro da String
+    val produto = "iPhone"
 
-    val nomeMaiusculo = "Rafael Bruno".uppercase() //Função que deixa todos os caracteres maiusculos
-    val nomeMinusculo = "Rafael Bruno".lowercase() //Função que deixa todos os caracteres minusculos
+    //se, senão
 
-    println(tamanhoDoNome)
-    println(nomeMaiusculo)
-    println(nomeMinusculo)
+    if (produto.length < 3) {
+        println("Você não pode cadastrar produtos com nomes pequenos")
+    } else {
+        println("Produto cadastrado com sucesso")
+    }
 
 }
