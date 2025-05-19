@@ -1,4 +1,9 @@
 fun main() {
+    //Condições
+    val produto = "iPhone"
+    if (produto.length < 3) {
+        println("Você não pode cadastrar produtos com nome pequeno")
+    }
     val nome = "RafaelBruno"
     val tamanhoDoNome = nome.length //Acessando a propriedado do objeto String para mostrar quantos caracteres tem armazenado dentro da String
 
