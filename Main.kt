@@ -38,11 +38,11 @@ fun main() {
     println("""
         CLIENTE APRESENTA QUAL PROBLEMA?
         SOLICITAÇÃO(x) - LENTIDÃO ( $lentidao ) - QUEDAS ($quedas) - SEM CONEXÃO ($loss)
-        OBS.:$observacao
-        SOLICITANTE:$nome
-        CONTATO:$telefone
-        OBSERVAÇÃO:$observacaoAtendimento
-        LOCALIZAÇÃO:$localizacao
+        OBS.: $observacao
+        SOLICITANTE: $nome
+        CONTATO: $telefone
+        OBSERVAÇÃO: $observacaoAtendimento
+        LOCALIZAÇÃO: $localizacao
     """.trimIndent())
 
     println("""
@@ -55,9 +55,9 @@ fun main() {
         --//--
         -INFORMACOES ADICIONAIS.
         - $observacao
-        SOLICITANTE:$nome
-        CONTATO DO SOLICITANTE:$telefone
-        LOCALIZAÇÃO:$localizacao
+        SOLICITANTE: $nome
+        CONTATO DO SOLICITANTE: $telefone
+        LOCALIZAÇÃO: $localizacao
         (  )-NAO?! QUAL O MOTIVO?
         --//--
         PERIODO SOLICITADO PELO CLIENTE: ( x )-MANHA (  )-TARDE.
