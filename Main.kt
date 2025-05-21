@@ -1,17 +1,12 @@
 fun main() {
-    //Condições
+    //Condições (Controle de Fluxo)
     val produto = "iPhone"
-    if (produto.length < 3) {
+
+    //Se, Senão -> Deve ser uma expressão booleana
+    // (< , <= , > , >= , !)
+    if (produto.length <= 3) {
         println("Você não pode cadastrar produtos com nome pequeno")
+    } else {
+        println("Produto Cadastrado com sucesso")
     }
-    val nome = "RafaelBruno"
-    val tamanhoDoNome = nome.length //Acessando a propriedado do objeto String para mostrar quantos caracteres tem armazenado dentro da String
-
-    val nomeMaiusculo = "Rafael Bruno".uppercase() //Função que deixa todos os caracteres maiusculos
-    val nomeMinusculo = "Rafael Bruno".lowercase() //Função que deixa todos os caracteres minusculos
-
-    println(tamanhoDoNome)
-    println(nomeMaiusculo)
-    println(nomeMinusculo)
-
 }
