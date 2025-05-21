@@ -1,14 +1,18 @@
 fun main() {
     //Condições (Controle de Fluxo)
-    val produto = "iPhone"
 
     //Se, Senão -> Deve ser uma expressão booleana
     // (< , <= , > , >= , ! , == , != )
 
-    /*Se houver apenas uma condição não é necessário usar às {} chaves para criar o bloco
-    basta apenas colocar o retorno ao lado*/
+    val preco = 49
+    val produto = "Teclado"
 
-    val idade = 31
-    if (idade > 30) println("Tenho mais de 30")
-    else println("Não tenho mais de 30")
+    // && Ambas expressões precisam ser verdadeiras
+    // || Uma das expressões precisa ser verdadeira
+
+    if (preco == 49 && produto == "Teclado") {
+        println("Sucesso")
+    } else {
+        println("Falha")
+    }
 }
