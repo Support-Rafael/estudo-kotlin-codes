@@ -4,15 +4,19 @@ fun main() {
     //Se, Senão -> Deve ser uma expressão booleana
     // (< , <= , > , >= , ! , == , != )
 
-    val preco = 49
-    val produto = "Teclado"
-
     // && Ambas expressões precisam ser verdadeiras
     // || Uma das expressões precisa ser verdadeira
 
-    if (preco == 49 && produto == "Teclado") {
-        println("Sucesso")
-    } else {
-        println("Falha")
-    }
+    //Comparar String
+    val produto1 = "iMac"
+    val produto2 = "iPhone"
+
+    //Verificar se às Strings são diferentes
+    println(produto1 != produto2)
+
+    //Verificar se às Strings são iguais
+    println(produto1 == produto2)
+
+    //Método do Java para verificar se Strings são iguais
+    println(produto1.equals(produto2))
 }
