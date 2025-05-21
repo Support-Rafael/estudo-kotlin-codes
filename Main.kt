@@ -5,14 +5,10 @@ fun main() {
     //Se, Senão -> Deve ser uma expressão booleana
     // (< , <= , > , >= , ! , == , != )
 
-    val preco = 20_000
-    if (preco > 30_000) {
-        println("Você ganhou 30% de desconto")
-    } else if (preco > 20_000) {
-        println("Você ganhou 20% de desconto")
-    } else if (preco > 10_000) {
-        println("Você ganhou 10% de desconto")
-    } else {
-        println("O valor não é suficiente para aplicar um desconto")
-    }
+    /*Se houver apenas uma condição não é necessário usar às {} chaves para criar o bloco
+    basta apenas colocar o retorno ao lado*/
+
+    val idade = 31
+    if (idade > 30) println("Tenho mais de 30")
+    else println("Não tenho mais de 30")
 }
