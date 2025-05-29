@@ -18,4 +18,12 @@ fun somar(): String {
 //Função para retornar um texto
 fun olaMundo() {
     println("Olá, mundo")
+
+    //Funções de escopo
+    fun subtracao() {
+        println("Mensagem informando que começou a execução")
+        println(2 + 4)
+    }
+
+    subtracao()
 }
