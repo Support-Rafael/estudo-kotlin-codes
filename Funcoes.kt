@@ -2,28 +2,23 @@ fun main() {
     //Valores Nulos
     //Toda função sem tipo de retorno declarado é do tipo : Unit
     // Functions - Blocos de códigos Reutilizáveis | Organizar o Código
+    //A função pode ter um tipo de retorno (Double, String, etc.) Caso não tenha retorno (): Unit ou ()
+    //Escopo de Funções
+    // Declaração e o Corpo da Função
+
+    olaMundo()
+    olaMundo2()
 
 
-    val resposta = somar() //Valor da variável recebendo retorno da função
-
-    olaMundo() //Call ou Chamada de Função
-
-    println(resposta) //Printado o resultado da chamada da função somar
 }
-//Função para somar dois números e printar o resultado
-fun somar(): String {
-    val resultado = 2 + 3
-    return "Estou somando 2 com 3 e o resultado é: $resultado"
-}
-//Função para retornar um texto
-fun olaMundo() {
-    println("Olá, mundo")
+//Função Body Line
+fun olaMundo() = println("Olá, Mundo!")
 
-    //Funções de escopo
-    fun subtracao() {
-        println("Mensagem informando que começou a execução")
-        println(2 + 4)
+fun olaMundo2() {
+    val age = 25
+    if (age < 18) {
+        println("Não pode dirigir")
+    } else {
+        println("Pode dirigir")
     }
-
-    subtracao()
 }
